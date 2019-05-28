@@ -1,5 +1,8 @@
 Vendy is a tool for vendoring third-party packages into your project.
 
+## Disclaimer:
+This is not an officially supported Google product.
+
 ## Example:
 
 In a `pyproject.toml` file in the root of your package, define the target
