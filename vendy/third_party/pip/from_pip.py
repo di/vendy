@@ -99,6 +99,11 @@ def apply_patch(patch_file_path):
 
 def vendor(config):
     log("Installing vendored libraries")
+
+    # Write out an empty __init__.py file in the _vendor directory
+    # This allows us to import from it in 2.7
+    Path(str(config.vendor_dir / '__init__.py')).touch()
+
     # We use --no-deps because we want to ensure that all of our dependencies
     # are added to the packages list, this includes all dependencies
     # recursively up the chain.
