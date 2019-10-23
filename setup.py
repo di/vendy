@@ -12,14 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from setuptools import setup
+from setuptools import find_packages, setup
 
 with open("README.md") as f:
     long_description = f.read()
 
 setup(
     name="vendy",
-    version="0.0.1",
+    version="0.0.2",
     author="Dustin Ingram",
     author_email="di@python.org",
     classifiers=[
@@ -32,7 +32,7 @@ setup(
     install_requires=["click", "requests", "toml"],
     long_description=long_description,
     long_description_content_type="text/markdown",
-    packages=["vendy"],
+    packages=find_packages(),
     python_requires=">=2.7,!=3.0,!=3.1,!=3.2,!=3.3",
     url="http://github.com/di/vendy",
     description="Vendy is a tool for vendoring third-party packages into your project",
