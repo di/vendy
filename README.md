@@ -20,7 +20,7 @@ packages = [
 On the command line:
 
 ```
-$ vendy
+$ python -m vendy
 [vendy] Using vendor dir: /private/tmp/my_project/my_project/_vendor
 [vendy] Cleaning /private/tmp/my_project/my_project/_vendor
 [vendy] Installing vendored libraries
