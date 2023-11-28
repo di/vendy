@@ -19,7 +19,7 @@ with open("README.md") as f:
 
 setup(
     name="vendy",
-    version="0.0.2",
+    version="0.0.3",
     author="Dustin Ingram",
     author_email="di@python.org",
     classifiers=[
